@@ -1,18 +1,20 @@
 <template>
   <div class="home">
-    <img alt="Vue logo" src="../assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
+    <home-compo msg="SAO Company"><router-link to="/register"><base-button txtonbutt = "Register" class="bg-purple-600 hover:bg-purple-700"></base-button></router-link></home-compo>
   </div>
+  
 </template>
 
 <script>
-// @ is an alias to /src
-import HelloWorld from '@/components/HelloWorld.vue'
+import HomeCompo from '../components/HomeCompo.vue'
+// import BaseButton from '../components/UI/BaseButton.vue'
 
 export default {
   name: 'Home',
   components: {
-    HelloWorld
-  }
+    HomeCompo
+  },
 }
-</script>
+  
+  </script>
